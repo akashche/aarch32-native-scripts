@@ -16,7 +16,7 @@ JTREG_OUT_DIR=/home/alex/tmp/jtreg
 
 rm -rf $JTREG_OUT_DIR
 
-echo start: `date +"%Y-%m-%d %T"`
+STARTED=`date +"%Y-%m-%d %T"`
 $JDK_BIN_DIR/bin/java \
     -jar $JTREG_DIR/lib/jtreg.jar \
     -v1 \
@@ -26,4 +26,5 @@ $JDK_BIN_DIR/bin/java \
     -jdk:$JDK_BIN_DIR \
     -ignore:quiet \
     $JDK_SRC_DIR/hotspot/test:$GROUP_NAME
-echo finish: `date +"%Y-%m-%d %T"`
+echo started: $STARTED
+echo finished: `date +"%Y-%m-%d %T"`
