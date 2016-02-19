@@ -1,4 +1,5 @@
-#/bin/bash
+#!/bin/bash
+
 set -x
 
 if [ -z "$1" ]; then
@@ -7,8 +8,9 @@ if [ -z "$1" ]; then
 fi
 GROUP_NAME=$1
 
+DEBUG_LEVEL=slowdebug
 JDK_SRC_DIR=/home/alex/jdk9/
-JDK_BIN_DIR=$JDK_SRC_DIR/build/linux-aarch32-normal-core-slowdebug/jdk
+JDK_BIN_DIR=$JDK_SRC_DIR/build/linux-aarch32-normal-core-$DEBUG_LEVEL/jdk
 JTREG_DIR=/home/alex/jtreg
 JTREG_OUT_DIR=/home/alex/tmp/jtreg
 
