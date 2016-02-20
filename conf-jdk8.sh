@@ -3,10 +3,9 @@
 set -x
 
 DEBUG_LEVEL=slowdebug
-BOOT_JDK=/home/alex/jdk1.8.0_65/
+BOOT_JDK=/home/alex/jdk1.7.0_60/
 
 bash ./configure \
-    --disable-warnings-as-errors \
     --disable-sjavac \
     --disable-zip-debug-info \
     --with-debug-level=$DEBUG_LEVEL \
