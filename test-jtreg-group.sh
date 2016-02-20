@@ -20,7 +20,7 @@ STARTED=`date +"%Y-%m-%d %T"`
 $JDK_BIN_DIR/bin/java \
     -jar $JTREG_DIR/lib/jtreg.jar \
     -v1 \
-    -svm \
+    -ovm \
     -r:$JTREG_OUT_DIR/JTreport \
     -w:$JTREG_OUT_DIR/JTwork \
     -jdk:$JDK_BIN_DIR \
